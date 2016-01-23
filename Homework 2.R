@@ -41,7 +41,7 @@ z <- x != 7
 z
 
 
-#5
+#P5
 z <- 6 > 3 + 8
 z
 z <- 6 + 3 > 8
@@ -60,7 +60,7 @@ z <- 2/5 >= 5
 z
 
 
-#6
+#P6
 A <- matrix(c(3, -5, 6, 15, 7, 9, 13, 5, -4, 10, 8, 4, 12, 2, 11, 1), 4)
 A
 v <- A[, 2]
@@ -100,11 +100,11 @@ range(temData$rain)
 
 
 #P9
-tapply(temData$temperature, temData$yr, mean)
+tmy <- tapply(temData$temperature, temData$yr, mean)
+tmy
 
-which.min(tapply(temData$temperature, temData$yr, mean))
-
-which.max(tapply(temData$temperature, temData$yr, mean))
+which.min(tmy)
+which.max(tmy)
 
 
 #P10
