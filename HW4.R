@@ -39,11 +39,28 @@ plot(month, temps$temperature, xlab= "Month", ylab= "High Temp")
 
 
 #P4
-i= 0.1:0.9
+i= seq(0.1, 0.9, by= 0.1)
 subt = paste ("P = ", i)
 
-barplot(dbinom(x = 0:8, size = 8, prob = 0.7), main= "Probability of Success", 
-        sub= subt[1], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.30))
+par(mfrow=c(3,3))
+barplot(dbinom(x = 0:8, size = 8, prob = i[1]), main= "Probability of Success", 
+        sub= subt[1], xlab="Trials", ylab= "Probability", names.arg= 0:8, ylim=c(0, 0.50))
+barplot(dbinom(x = 0:8, size = 8, prob = i[2]), main= "Probability of Success", 
+        sub= subt[2], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.50))
+barplot(dbinom(x = 0:8, size = 8, prob = i[3]), main= "Probability of Success", 
+        sub= subt[3], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.50))
+barplot(dbinom(x = 0:8, size = 8, prob = i[4]), main= "Probability of Success", 
+        sub= subt[4], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.50))
+barplot(dbinom(x = 0:8, size = 8, prob = i[5]), main= "Probability of Success", 
+        sub= subt[5], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.50))
+barplot(dbinom(x = 0:8, size = 8, prob = i[6]), main= "Probability of Success", 
+        sub= subt[6], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.50))
+barplot(dbinom(x = 0:8, size = 8, prob = i[7]), main= "Probability of Success", 
+        sub= subt[7], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.50))
+barplot(dbinom(x = 0:8, size = 8, prob = i[8]), main= "Probability of Success", 
+        sub= subt[8], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.50))
+barplot(dbinom(x = 0:8, size = 8, prob = i[9]), main= "Probability of Success", 
+        sub= subt[9], xlab="Trials", ylab= "Probability", names.arg= 0:8,  ylim=c(0, 0.50))
 
 
 
