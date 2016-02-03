@@ -12,5 +12,9 @@ plot(x,y, type="l", xlab ="Weight(lbs)", ylab ="", main = "Distribution", ylim=c
 
 
 
+#P4
+temps <- read.table("Temperatures.txt",header=TRUE)
+month <- factor(temps$month)
+plot(month, temps$temperature, xlab= "Month", ylab= "High Temp")
 
 
