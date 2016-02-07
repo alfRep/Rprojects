@@ -3,7 +3,7 @@ plot(0:200, pi/4 - cumsum((-1)^(0:200)*(1/(1+2*(0:200)))), xlab = "n", ylab = "P
 
 #P2
 mu <- 1152 #lbs
-
+rho <- 84 #lbs
 
 x   <- seq(-4,4,length=50)*rho + mu
 y   <- dnorm(x,mu,rho)
